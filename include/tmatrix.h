@@ -9,6 +9,8 @@
 
 #include <iostream>
 #include <cassert>
+#include <cstdlib>
+#include <cmath>
 
 using namespace std;
 
@@ -373,4 +375,4 @@ public:
 
 };
 
-#endif;
+#endif

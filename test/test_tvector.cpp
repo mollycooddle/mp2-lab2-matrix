@@ -321,3 +321,16 @@ TEST(TDynamicVector, correctly_do_move)
 	EXPECT_EQ(v2.size(), 2);
 	EXPECT_EQ(v2.get_pMem(), tmp);
 }
+
+TEST(TDynamicVector, correctly_do_move_operator) {
+	TDynamicVector<int> v1(2);
+	int* tmp = v1.get_pMem();
+	TDynamicVector<int> v2 = std::move(v1);
+
+	EXPECT_EQ(v1.size(), 0);
+	EXPECT_EQ(v1.get_pMem(), nullptr);
+
+	EXPECT_EQ(v2.size(), 2);
+	EXPECT_EQ(v2.get_pMem(), tmp);
+
+}
