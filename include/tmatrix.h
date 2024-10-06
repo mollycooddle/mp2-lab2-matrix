@@ -213,7 +213,7 @@ public:
       for (int i = 0; i < sz; i++) {
           res += this->pMem[i] * v.pMem[i];
       }
-      return sqrt(res);
+      return res;
   }
 
   friend void swap(TDynamicVector& lhs, TDynamicVector& rhs) noexcept
