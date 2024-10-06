@@ -282,7 +282,7 @@ TEST(TDynamicVector, can_multiply_vectors_with_equal_size)
 	TDynamicVector<int> v1(2);
 	TDynamicVector<int> v2(2);
 	int res = 0;
-	int result = sqrt(6);
+	int result = 6;
 
 	v1[0] = 1;
 	v1[1] = 1;
